@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+ALTER Table ${1}
+drop foreign key ${2};
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>dropfkey</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.sql</scope>
+</snippet>

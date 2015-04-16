@@ -3,7 +3,7 @@
 ALTER TABLE ${1:tableName} 
 ADD COLUMN ${2:columnName} INT NOT NULL , 
 ADD CONSTRAINT ${3:constraintName} FOREIGN KEY (${2}) 
-REFERENCES ${4:refTable}(${5:columnFromRefTable}); 
+REFERENCES ${4:refTable}(id); 
 
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
