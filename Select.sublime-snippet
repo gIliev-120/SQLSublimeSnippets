@@ -1,0 +1,10 @@
+<snippet>
+   <content><![CDATA[
+SELECT ${1}.* FROM ${2:table}
+JOIN ${3:table1} on ${4}
+join ${5} on ${6}
+Where ${7};
+]]></content>
+   <tabTrigger>SELECT</tabTrigger>
+   <scope>source.sql - string.quoted.double.sql - string.quoted.single.sql</scope>
+</snippet>

@@ -1,0 +1,45 @@
+<snippet>
+	<content><![CDATA[
+CREATE TABLE Article(
+		id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+		name varchar(30),
+		published_on date,
+		price decimal(64),
+		created_on date,
+		url text,
+		content text
+	);
+
+CREATE TABLE Category(
+		id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+		name varchar(30),
+		description varchar(100),
+		date_created_on date,
+		priority double,
+		created_by varchar(100)
+	);
+
+CREATE TABLE User(
+		id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+		name varchar(30),
+		password varchar(30),
+		created_on date,
+		age int,
+		income float,
+		picture_url text,
+		description longtext
+   	);
+
+CREATE TABLE Tag(
+		id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+		name varchar(30),
+		priority int,
+		description varchar(200),
+		second_priority float
+   	);
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>creates</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.sql</scope>
+</snippet>

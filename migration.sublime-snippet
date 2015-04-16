@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+create table ${1:table}_1 (
+id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+${2},
+${3}	
+);
+
+create table ${4:table2}_2 (
+id INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+${5},
+${6}
+);
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>migration</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.sql</scope>
+</snippet>

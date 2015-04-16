@@ -1,0 +1,13 @@
+<snippet>	
+<content><![CDATA[
+ALTER TABLE ${1:tableName} 
+ADD COLUMN ${2:columnName} INT NOT NULL , 
+ADD CONSTRAINT ${3:constraintName} FOREIGN KEY (${2}) 
+REFERENCES ${4:refTable}(${5:columnFromRefTable}); 
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>fkey</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.sql</scope>
+</snippet>
